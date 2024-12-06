@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANSH InfoTech</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <!-- Bootstrap JS (includes Popper.js as dependency) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="/public/CSS/custom-style.css">
+  <link rel="stylesheet" href="/public/CSS/navbar.css">
+  <link rel="stylesheet" href="/public/CSS/footer.css">
+  <link rel="stylesheet" href="/public/CSS/blog.css">
+  <link rel="stylesheet" href="/public/CSS/client.css">
+  <link rel="stylesheet" href="/public/CSS/team.css">
+
+</head>
+<style>
+  /* Instagram Button Styling */
+.btn-outline-instagram {
+  border-color: #E4405F; /* Instagram's brand color */
+  color: #E4405F;
+}
+
+/* Hover Effect */
+.btn-outline-instagram:hover {
+  background-color: #E4405F; /* Change background to Instagram's brand color */
+  color: white; /* Change text color to white */
+  border-color: #E4405F; /* Ensure the border color stays the same */
+}
+
+.location-box:hover, .email-box:hover, .call-box:hover {
+        background-color: #f1f1f1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+    
+  
+    #address h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    #address p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+</style>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Information -->
+      <div class="address d-flex gap-3">
+        <div><i class="fas fa-map-marker-alt cursor-pointer"></i>
+          <span class="d-none d-sm-inline">SFC-4 3rd Floor , Model Town, Ludhiana</span>
+        </div>
+        <div>
+          <i class="fas fa-phone ms-3" ></i>
+          <span class="d-none d-sm-inline"> +91 7652983770</span>
+        </div> <!-- Text hidden on small screens -->
+        <div class="">
+          <i class="fas fa-envelope ms-3"></i>
+          <a href="mailto:anshinfotech1@gmail.com" class="d-none d-sm-inline text-decoration-none text-dark"
+            >anshinfotech1@gmail.com
+          </a></span>
+           
+        </div>
+       
+
+        <!-- Text hidden on small screens -->
+      </div>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <span class="social-title d-none d-sm-inline">Follow Us On : </span> <!-- Text hidden on small screens -->
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/anshinfotech" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/ansh-infotech1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">ANSH InfoTech</a>
+      <!-- Button to toggle navbar -->
+      <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="togglerIcon" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="pagesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="./team.html">Expert Team</a></li>
+              <li><a class="dropdown-item" href="./testimonial.html">Testimonials</a></li>
+              <li>
+                <a class="dropdown-item" href="./blog.html">Blog</a>
+              </li>
+              <li><a class="dropdown-item" href="/Views/fqs.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="/Views/get guid.html">Get Guide</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- contact -->
+
+  <section class="container py-5" id="contact">
+    <div class="row justify-content-center">
+        <!-- Left Column (Image) -->
+        <div class="col-lg-6 mb-4">
+            <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/02/customer_support.jpg"
+                alt="Customer Support" class="img-fluid rounded shadow-lg">
+        </div>
+
+        <!-- Right Column (Content & Form) -->
+        <div class="col-lg-6">
+            <div class="title-area-wrap mb-4">
+                <div class="title-area">
+                    <div class="shadow-title">CONTACT US</div>
+                    <span class="sub-title subtitle-selector">
+                        <img src="/public/images/square.png" style="width: 20px;" alt="Icon" class="icon me-2">
+                        GET IN TOUCH WITH US
+                    </span>
+                    <h2 class="sec-title">
+                        We’d Love to Hear From You <span class="text-theme">! Contact Us Now</span>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="submit_form.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <!-- Mobile Number field updated -->
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Your Mobile No.</label>
+                    <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter your Mobile No." required>
+                </div>
+                
+                <!-- Subject field updated -->
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter your Subject" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </div>
+            </form>
+
+            <!-- Social Media Links -->
+            <div class="social-links mt-4 text-center">
+                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="btn btn-outline-instagram me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="btn btn-outline-secondary me-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Address, Email, and Phone Number in same line with Hover Effects -->
+   <div class="row mt-4">
+    <div class="col-lg-4">
+        <div class="row align-items-center location-box" id="address">
+            <div class="col-sm-3">
+                <i class="fas fa-map-marker-alt fa-2x fa-m"></i>
+            </div>
+            <div class="col-sm-9">
+                <h3>Location:</h3>
+                <p>SCF-4, 3rd Floor, Model Town Ext. D-Block, Ludhiana, Punjab 141003</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="row align-items-center email-box" id="address">
+            <div class="col-sm-3">
+                <i class="fas fa-envelope fa-2x fa-m"></i>
+            </div>
+            <div class="col-sm-9">
+                <h3>Email:</h3>
+                <p>anshinfotech1@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="row align-items-center call-box" id="address">
+            <div class="col-sm-3">
+                <i class="fas fa-phone-alt fa-2x fa-m"></i>
+            </div>
+            <div class="col-sm-9">
+                <h3>Call:</h3>
+                <p>
+                    +91 88376 54161
+                    <br>
+                    +91 82647 54342
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Google Map Integration -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h4 class="sec-title">Our Location</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.228161013078!2d75.8505492!3d30.8802777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a825313ade647%3A0x8221aeeb0002f9ba!2sANSH%20InfoTech!5e0!3m2!1sen!2sin!4v1707721607374!5m2!1sen!2sin"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS for Hover Effects -->
+
+        
+
+
+
+  
+
+
+
+
+  <!-- Ansh Infotech Footer Code  -->
+  <footer>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo Column -->
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a class="navbar-brand" href="#">ANSH InfoTech</a>
+            </div>
+            <div class="logo-description fs-5 text-light mt-2">
+              IT Solutions for the Digital Age. 
+            </div>
+          </div>
+  
+          <!-- Newsletter Subscription Column -->
+          <div class="col-md-6 p-4">
+            <div class="newsletter-wrap rounded-3 p-3">
+              <div class="newsletter-content">
+                <h3 class="newsletter-title text-dark mt-4 fs-3 mb-2">News Subscription</h3>
+                <p class="newsletter-text text-dark fs-6 mb-2">Get Latest Deals from Waker’s Inbox &amp; Subscribe Now</p>
+              </div>
+              <div class="container my-5">
+                <form class="newsletter-form">
+                  <div class="form-group d-flex flex-column flex-sm-row align-items-center mb-3">
+                    <!-- Input field with wrapper to hold the email icon -->
+                    <div class="input-wrapper d-flex position-relative">
+                      <input type="email" class="form-control py-2 rounded-3 border-dark pe-5" placeholder="Email Address" required>
+                      <!-- Email icon inside the input -->
+                     
+                        <i class="fa-solid fa-envelope position-absolute top-50 end-0 translate-middle-y pe-3" style="color: darkgreen;"></i>
+                     
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary ms-sm-2 mt-2 mt-sm-0 d-flex align-items-center">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Company Column -->
+          <div class="col-md-3">
+            <div class="footer-widget">
+              <h3 class="widget_title">ABOUT COMPANY</h3>
+              <div class="th-widget-about">
+                <p class="about-text">Professionally redefine transparent ROI through low-risk high-yield imperatives.
+                  Progressively create empowered, cost-effective users via team-driven approaches.</p>
+                <div class="th-social">
+                  <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                  <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Quick Links</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/about-us/">About Us</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/team/">Team</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/faq/">FAQ</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/projects/">Projects</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/contact-us/">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <!-- Useful Links Section -->
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Useful Links</h3>
+              <ul class="webteck-menu">
+                <li><a href="https://wordpress.themeholy.com/webteck/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/terms-and-conditions/">Terms & Conditions</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/support/">Support</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/blog/">Blog</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/careers/">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- IT Services Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">IT SERVICES</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Web Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Business Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Product Management</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">UI/UX Design</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Cloud Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Posts Column -->
+
+        </div>
+
+        <!-- Footer Logo and Description -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a href="#">ANSH InfoTech</a>
+              <div class="logo-description">
+                IT Solutions for the Digital Age
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- Other footer content goes here -->
+    
+    <div class="copyright-wrap py-3">
+      <div class="container">
+        <div class="row">
+          <!-- Left Column with Copyright Text -->
+          <div class="col-12 text-center opacity-75">
+            <p class="copyright-text ">
+              Copyright &copy; 2024
+              <a href="#" class="copyright-link">All Rights Reserved. </a>
+              <br>Powered by <strong>Ansh InfoTech</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript File -->
+  <script src="/public/Scripts/main.js"></script>
+</body>
+
+</html>

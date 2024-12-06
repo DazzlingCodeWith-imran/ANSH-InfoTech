@@ -1,0 +1,169 @@
+
+.newsletter-wrap {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: -20px;
+}
+
+.newsletter-title {
+  font-weight: bold;
+}
+
+
+.newsletter-form .form-group {
+  position: relative;
+  
+}
+
+.newsletter-form .form-control {
+  color: rgb(8, 8, 8);
+  padding-left: 40px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.newsletter-form .form-control:focus {
+  border-color: #121312;
+}
+
+.newsletter-form .fa-envelope {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #f0eded;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: rgba(7, 83, 7, 0.842);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgb(14, 78, 14);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-top {
+    padding: 30px 0;
+  }
+
+  .newsletter-title {
+    font-size: 22px;
+  }
+
+  .newsletter-text {
+    font-size: 14px;
+  }
+}
+
+
+.footer-top {
+  background-color: rgb(14, 78, 14);
+  color: gray;
+}
+
+.footer-widget {
+  margin-bottom: 30px;
+}
+
+.widget_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(252, 248, 248);
+}
+
+.th-widget-about p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #f3f3f3;
+}
+
+.th-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff8f8;
+  font-size: 20px;
+}
+
+.th-social a:hover {
+  color: #010302;
+}
+
+.widget_nav_menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.widget_nav_menu li {
+  margin-bottom: 10px;
+}
+
+.widget_nav_menu a {
+  color: #f8f3f3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.widget_nav_menu a:hover {
+  color: #cfdfd7;
+}
+
+
+
+.logo-container a {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f8f6f6;
+  text-decoration: none;
+}
+
+.logo-container .logo-description {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #fffdfd;
+}
+
+@media (max-width: 768px) {
+  .footer-widget {
+    text-align: center;
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+
+  .footer-top {
+    padding: 40px 20px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form-control {
+  padding-right: 40px; /* Make sure there's enough space for the icon */
+}
+
+.fa-envelope {
+  z-index: 2; /* Ensure the icon is above other elements */
+  pointer-events: none; /* Ensure icon doesn't block clicks */
+}
+
+
+/*   copyright-wrap */
+.copyright-wrap{
+  background-color: #012906;
+  color: #ffffff;
+  font-size: 12px;
+}

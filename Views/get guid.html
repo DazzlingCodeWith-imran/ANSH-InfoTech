@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANSH InfoTech</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap JS (includes Popper.js as dependency) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="/public/CSS/custom-style.css">
+  <link rel="stylesheet" href="/public/CSS/navbar.css">
+  <link rel="stylesheet" href="/public/CSS/footer.css">
+  <link rel="stylesheet" href="/public/CSS/blog.css">
+  <link rel="stylesheet" href="/public/CSS/client.css">
+  <link rel="stylesheet" href="/public/CSS/team.css">
+
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Information -->
+      <div class="address d-flex gap-3">
+        <div><i class="fas fa-map-marker-alt cursor-pointer"></i>
+          <span class="d-none d-sm-inline">SFC-4 3rd Floor , Model Town, Ludhiana</span>
+        </div>
+        <div>
+          <i class="fas fa-phone ms-3" ></i>
+          <span class="d-none d-sm-inline"> +91 7652983770</span>
+        </div> <!-- Text hidden on small screens -->
+        <div class="">
+          <i class="fas fa-envelope ms-3"></i>
+          <a href="mailto:anshinfotech1@gmail.com" class="d-none d-sm-inline text-decoration-none text-dark"
+            >anshinfotech1@gmail.com
+          </a></span>
+           
+        </div>
+       
+
+        <!-- Text hidden on small screens -->
+      </div>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <span class="social-title d-none d-sm-inline">Follow Us On : </span> <!-- Text hidden on small screens -->
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/anshinfotech" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/ansh-infotech1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">ANSH InfoTech</a>
+      <!-- Button to toggle navbar -->
+      <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="togglerIcon" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="/Views/about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="pagesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li class="nav-item">
+                <a class="dropdown-item" href="./blog.html">Blog</a>
+              </li>
+              <li><a class="dropdown-item" href="./team.html">Expert Team</a></li>
+              <li><a class="dropdown-item" href="./testimonial.html">Testimonials</a></li>
+              <li><a class="dropdown-item" href="./fqs.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="./get guid.html">Get Guide</a></li>
+            </ul>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <ul class="breadcrumb-menu d-flex p-3 m-2 list-unstyled">
+    <li class="breadcrumb-item me-3"><a href="/Views/index.html" style="cursor: pointer;">Home</a>
+    </li>
+    <li class="breadcrumb-item">Get Guide</li>
+  </ul>
+
+<!--  fqs -->
+<!--  Get Gude Hero Section -->
+<section id="guide" class="text-white text-center py-5" style="background-image: url('/public/images/Green-Wallpaper-1.jpg'); background-size: cover; background-position: center; position: relative;">
+  
+  <!-- Semi-transparent Overlay -->
+  <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); z-index: 1;"></div>
+
+  
+  <!-- Content Section -->
+  <div id="guide" class="container" style="position: relative; z-index: 2;">
+    <h1 class="display-4">Get Your Free Guide Today!</h1>
+    <p class="lead">Fill out the form below to get the latest guide with top tips and advice!</p>
+    <a href="#form-section" class="btn btn-primary  btn-lg">Get the Guide</a>
+  </div>
+</section>
+
+<!-- Request Form Section -->
+<section id="form-section" class="container py-5">
+  <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+          <div class="card shadow-sm border-0 rounded">
+              <div class="card-body p-4">
+                  <h2 class="h3 mb-4 text-center ">Request Your Guide</h2>
+                  <form action="#" method="POST">
+                      <!-- Full Name -->
+                      <div class="mb-3">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                      </div>
+
+                      <!-- Email Address -->
+                      <div class="mb-3">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                      </div>
+
+                      <!-- Message -->
+                      <div class="mb-3">
+                          <textarea class="form-control" id="message" name="message" placeholder="Why do you need this guide?" rows="4" required></textarea>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-primary btn-lg w-100">Request Guide</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Ansh Infotech Footer Code  -->
+  <footer>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo Column -->
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a class="navbar-brand" href="#">ANSH InfoTech</a>
+            </div>
+            <div class="logo-description fs-5 text-light mt-2">
+              IT Solutions for the Digital Age. 
+            </div>
+          </div>
+  
+          <!-- Newsletter Subscription Column -->
+          <div class="col-md-6 p-4">
+            <div class="newsletter-wrap rounded-3 p-3">
+              <div class="newsletter-content">
+                <h3 class="newsletter-title text-dark mt-4 fs-3 mb-2">News Subscription</h3>
+                <p class="newsletter-text text-dark fs-6 mb-2">Get Latest Deals from Waker’s Inbox &amp; Subscribe Now</p>
+              </div>
+              <div class="container my-5">
+                <form class="newsletter-form">
+                  <div class="form-group d-flex flex-column flex-sm-row align-items-center mb-3">
+                    <!-- Input field with wrapper to hold the email icon -->
+                    <div class="input-wrapper d-flex position-relative">
+                      <input type="email" class="form-control py-2 rounded-3 border-dark pe-5" placeholder="Email Address" required>
+                      <!-- Email icon inside the input -->
+                     
+                        <i class="fa-solid fa-envelope position-absolute top-50 end-0 translate-middle-y pe-3" style="color: darkgreen;"></i>
+                     
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary ms-sm-2 mt-2 mt-sm-0 d-flex align-items-center">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Company Column -->
+          <div class="col-md-3">
+            <div class="footer-widget">
+              <h3 class="widget_title">ABOUT COMPANY</h3>
+              <div class="th-widget-about">
+                <p class="about-text">Professionally redefine transparent ROI through low-risk high-yield imperatives.
+                  Progressively create empowered, cost-effective users via team-driven approaches.</p>
+                <div class="th-social">
+                  <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                  <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Quick Links</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/about-us/">About Us</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/team/">Team</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/faq/">FAQ</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/projects/">Projects</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/contact-us/">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <!-- Useful Links Section -->
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Useful Links</h3>
+              <ul class="webteck-menu">
+                <li><a href="https://wordpress.themeholy.com/webteck/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/terms-and-conditions/">Terms & Conditions</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/support/">Support</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/blog/">Blog</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/careers/">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- IT Services Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">IT SERVICES</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Web Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Business Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Product Management</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">UI/UX Design</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Cloud Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Posts Column -->
+
+        </div>
+
+        <!-- Footer Logo and Description -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a href="#">ANSH InfoTech</a>
+              <div class="logo-description">
+                IT Solutions for the Digital Age
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- Other footer content goes here -->
+    
+    <div class="copyright-wrap py-3">
+      <div class="container">
+        <div class="row">
+          <!-- Left Column with Copyright Text -->
+          <div class="col-12 text-center opacity-75">
+            <p class="copyright-text ">
+              Copyright &copy; 2024
+              <a href="#" class="copyright-link">All Rights Reserved. </a>
+              <br>Powered by <strong>Ansh InfoTech</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript File -->
+  <script src="/public/Scripts/main.js"></script>
+</body>
+
+</html>

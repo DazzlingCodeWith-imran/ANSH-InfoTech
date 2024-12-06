@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANSH InfoTech</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap JS (includes Popper.js as dependency) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="/public/CSS/custom-style.css">
+  <link rel="stylesheet" href="/public/CSS/navbar.css">
+  <link rel="stylesheet" href="/public/CSS/footer.css">
+  <link rel="stylesheet" href="/public/CSS/blog.css">
+  <link rel="stylesheet" href="/public/CSS/client.css">
+  <link rel="stylesheet" href="/public/CSS/team.css">
+
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Information -->
+      <div class="address d-flex gap-3">
+        <div><i class="fas fa-map-marker-alt cursor-pointer"></i>
+          <span class="d-none d-sm-inline">SFC-4 3rd Floor , Model Town, Ludhiana</span>
+        </div>
+        <div>
+          <i class="fas fa-phone ms-3" ></i>
+          <span class="d-none d-sm-inline"> +91 7652983770</span>
+        </div> <!-- Text hidden on small screens -->
+        <div class="">
+          <i class="fas fa-envelope ms-3"></i>
+          <a href="mailto:anshinfotech1@gmail.com" class="d-none d-sm-inline text-decoration-none text-dark"
+            >anshinfotech1@gmail.com
+          </a></span>
+           
+        </div>
+       
+
+        <!-- Text hidden on small screens -->
+      </div>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <span class="social-title d-none d-sm-inline">Follow Us On : </span> <!-- Text hidden on small screens -->
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/anshinfotech" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/ansh-infotech1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">ANSH InfoTech</a>
+      <!-- Button to toggle navbar -->
+      <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="togglerIcon" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="pagesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li class="nav-item">
+                <a class="dropdown-item" href="./blog.html">Blog</a>
+              </li>
+              <li><a class="dropdown-item" href="./team.html">Expert Team</a></li>
+              <li><a class="dropdown-item" href="./testimonial.html">Testimonials</a></li>
+              <li><a class="dropdown-item" href="#fqs">FAQ</a></li>
+              <li><a class="dropdown-item" href="./get guid.html">Get Guide</a></li>
+            </ul>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--  fqs -->
+<section id="fqs" class="hero container-fluid" style="background-image: url('/public/images/fqs.avif'); background-size: cover; background-position: center; background-attachment: fixed; padding: 50px 0;">
+  <div class="container">
+    <ul class="breadcrumb-menu d-flex p-3 m-2 list-unstyled">
+      <li class="breadcrumb-item me-3"><a href="/Views/index.html">Home</a></li>
+      <li class="breadcrumb-item">FAQ</li>
+    </ul>
+    <!-- Heading Section -->
+    <div class="text-center mb-5">
+      <h2 class="text-white fw-bold">Frequently Asked Questions</h2>
+      <p class="text-white">Find answers to the most common questions below.</p>
+    </div>
+  </div>
+</section>
+
+<!-- White Background Section starts here -->
+<div style="background-color: white; padding-top: 50px; padding-bottom: 50px; padding-left: 20px; padding-right: 20px;">
+ 
+  <div class="gap-5">
+    <!-- Accordion Section -->
+    <div class="row">
+      <!-- Question 1 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <h5>What benefits can you guarantee?</h5>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+              <div class="accordion-body custom-padding"> <!-- Custom padding class added here -->
+                All projects we take up carry the following guarantees: Confidentiality, Price, and Results guarantee.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Question 2 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample2">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5>How do we keep ourselves informed about progress?</h5>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+              <div class="accordion-body custom-padding"> <!-- Custom padding class added here -->
+                We will send you regular project status reports. We use a combination of pre-determined update schedules and ad-hoc meetings.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Accordion Items -->
+    <div class="row">
+      <!-- Question 3 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample3">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5>What is the Quality of People you Employ?</h5>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample3">
+              <div class="accordion-body custom-padding">
+                Our people are highly qualified and have extensive industry experience.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample4">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h5>What control do we have over the project?</h5>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample4">
+              <div class="accordion-body custom-padding">
+                You will have the ability to keep close control over the project.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Question 5 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample5">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <h5>Can you guarantee time-bound results?</h5>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample5">
+              <div class="accordion-body custom-padding">
+                We work on time-based billing for reasons that benefit our clients.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <h5>What ERP Packages are you Providing?</h5>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample6">
+              <div class="accordion-body custom-padding">
+                We provide ERP Solutions to Schools, Colleges, Gym, Hospitals, Hotels, and Office Managements.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Question 7 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample7">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <h5>What contracts and agreements do you sign?</h5>
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample7">
+              <div class="accordion-body custom-padding">
+                We sign NDAs before initial discussions, and final contracts are drawn in detail.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample8">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <h5>Why to choose AIT for Development Services?</h5>
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample8">
+              <div class="accordion-body custom-padding">
+                AIT provides the best technical solutions at competitive prices within the timeframe.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more accordion items -->
+    <div class="row">
+      <!-- Question 9 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample9">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                <h5>Do you offer support after project completion?</h5>
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample9">
+              <div class="accordion-body custom-padding">
+                Yes, we offer support for a specified period after project completion to ensure everything runs smoothly.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample10">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                <h5>What is your pricing model?</h5>
+              </button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample10">
+              <div class="accordion-body custom-padding">
+                We offer competitive pricing based on the project scope, with flexible pricing models that suit your needs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Question 11 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample11">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEleven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                <h5>What is your approach to customer service?</h5>
+              </button>
+            </h2>
+            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample11">
+              <div class="accordion-body custom-padding">
+                We prioritize excellent customer service, maintaining clear communication and quick response times.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 12 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample12">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwelve">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                <h5>Can you handle large-scale projects?</h5>
+              </button>
+            </h2>
+            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample12">
+              <div class="accordion-body custom-padding">
+                Yes, we have the expertise and resources to handle both small and large-scale projects efficiently.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Question 13 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample13">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThirteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                <h5>What industries do you specialize in?</h5>
+              </button>
+            </h2>
+            <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample13">
+              <div class="accordion-body custom-padding">
+                We specialize in various industries including healthcare, education, hospitality, and retail.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 14 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample14">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFourteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                <h5>What are your payment terms?</h5>
+              </button>
+            </h2>
+            <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample14">
+              <div class="accordion-body custom-padding">
+                Our payment terms are flexible, typically structured around project milestones or phases.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Question 15 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample15">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFifteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                <h5>How long have you been in business?</h5>
+              </button>
+            </h2>
+            <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample15">
+              <div class="accordion-body custom-padding">
+                We have been in business for over 10 years, delivering high-quality solutions to clients worldwide.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 16 -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample16">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSixteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                <h5>Do you offer customization of your services?</h5>
+              </button>
+            </h2>
+            <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample16">
+              <div class="accordion-body custom-padding">
+                Yes, we offer fully customizable solutions to meet the specific needs of each client.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Ansh Infotech Footer Code  -->
+  <footer>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo Column -->
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a class="navbar-brand" href="#">ANSH InfoTech</a>
+            </div>
+            <div class="logo-description fs-5 text-light mt-2">
+              IT Solutions for the Digital Age. 
+            </div>
+          </div>
+  
+          <!-- Newsletter Subscription Column -->
+          <div class="col-md-6 p-4">
+            <div class="newsletter-wrap rounded-3 p-3">
+              <div class="newsletter-content">
+                <h3 class="newsletter-title text-dark mt-4 fs-3 mb-2">News Subscription</h3>
+                <p class="newsletter-text text-dark fs-6 mb-2">Get Latest Deals from Waker’s Inbox &amp; Subscribe Now</p>
+              </div>
+              <div class="container my-5">
+                <form class="newsletter-form">
+                  <div class="form-group d-flex flex-column flex-sm-row align-items-center mb-3">
+                    <!-- Input field with wrapper to hold the email icon -->
+                    <div class="input-wrapper d-flex position-relative">
+                      <input type="email" class="form-control py-2 rounded-3 border-dark pe-5" placeholder="Email Address" required>
+                      <!-- Email icon inside the input -->
+                     
+                        <i class="fa-solid fa-envelope position-absolute top-50 end-0 translate-middle-y pe-3" style="color: darkgreen;"></i>
+                     
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary ms-sm-2 mt-2 mt-sm-0 d-flex align-items-center">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Company Column -->
+          <div class="col-md-3">
+            <div class="footer-widget">
+              <h3 class="widget_title">ABOUT COMPANY</h3>
+              <div class="th-widget-about">
+                <p class="about-text">Professionally redefine transparent ROI through low-risk high-yield imperatives.
+                  Progressively create empowered, cost-effective users via team-driven approaches.</p>
+                <div class="th-social">
+                  <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                  <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Quick Links</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/about-us/">About Us</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/team/">Team</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/faq/">FAQ</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/projects/">Projects</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/contact-us/">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <!-- Useful Links Section -->
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Useful Links</h3>
+              <ul class="webteck-menu">
+                <li><a href="https://wordpress.themeholy.com/webteck/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/terms-and-conditions/">Terms & Conditions</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/support/">Support</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/blog/">Blog</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/careers/">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- IT Services Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">IT SERVICES</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Web Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Business Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Product Management</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">UI/UX Design</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Cloud Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Posts Column -->
+
+        </div>
+
+        <!-- Footer Logo and Description -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a href="#">ANSH InfoTech</a>
+              <div class="logo-description">
+                IT Solutions for the Digital Age
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- Other footer content goes here -->
+    
+    <div class="copyright-wrap py-3">
+      <div class="container">
+        <div class="row">
+          <!-- Left Column with Copyright Text -->
+          <div class="col-12 text-center opacity-75">
+            <p class="copyright-text ">
+              Copyright &copy; 2024
+              <a href="#" class="copyright-link">All Rights Reserved. </a>
+              <br>Powered by <strong>Ansh InfoTech</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript File -->
+  <script src="/public/Scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+/* Basic Styling */
+.team-container {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-title h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.team-title h2 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #0073e6;
+}
+
+.team-title h3 {
+  font-size: 18px;
+  font-weight: light;
+  color: #777;
+}
+
+/* Card Styles */
+.team-card {
+  position: relative;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform, box-shadow;
+}
+
+/* Hover Effects for Card */
+.team-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.team-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  animation: slide 10s linear infinite; /* Add sliding animation */
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+}
+
+/* Hover Effects for Image */
+.team-card:hover .team-img img {
+  transform: scale(1.1); /* Zoom effect on hover */
+  opacity: 0.9;
+}
+
+/* Info Section */
+.team-info {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden; /* Hide by default */
+  opacity: 0;
+  transition: background-color 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Show info on hover */
+.team-card:hover .team-info {
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.95); /* Less transparent when hovering */
+}
+
+.team-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.team-info h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-info span {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Hover Effects for Info */
+.team-card:hover .team-info h3 {
+  color: #90EE90;
+}
+
+.team-card:hover .team-info span {
+  color: #555;
+}
+
+/* Social Icons */
+.team-social {
+  margin-top: 15px;
+}
+
+.team-social a {
+  margin: 0 8px;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.team-social a:hover {
+  color: #90EE90;
+  transform: translateY(-5px);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Screens (Tablets and Laptops) */
+@media (max-width: 1024px) {
+  .team-card {
+      width: 220px;
+  }
+
+  /* Sliding Animation on Hover for Tablets/Laptops */
+  .team-img {
+      animation: none; /* Remove continuous sliding animation */
+  }
+
+  .team-card:hover .team-img {
+      animation: slide 10s linear infinite; /* Add animation on hover */
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .team-card {
+      width: 180px;
+  }
+
+  .team-info h3 {
+      font-size: 16px;
+  }
+
+  .team-info span {
+      font-size: 12px;
+  }
+
+  .team-social a {
+      font-size: 18px;
+  }
+
+  /* Disable animation for mobile */
+  .team-img {
+      animation: none; /* Disable sliding animation */
+  }
+
+  .team-card {
+      transition: none; /* Disable hover animation */
+  }
+
+  .team-img img {
+      transition: none; /* Disable zoom animation */
+  }
+
+  .team-card:hover .team-info {
+      visibility: visible; /* Make info section always visible */
+      opacity: 1;
+  }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 480px) {
+  .team-container {
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .team-card {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 20px;
+  }
+
+  .team-info h3 {
+      font-size: 14px;
+  }
+
+  .team-info span {
+      font-size: 12px;
+  }
+
+  .team-social a {
+      font-size: 16px;
+  }
+}
+
+/* Keyframes for Image Animation */
+@keyframes slide {
+ 
+}

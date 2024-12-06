@@ -1,0 +1,54 @@
+/* Top Bar */
+.top-bar {
+  background-color: #44e078;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+
+.top-bar .social-icons a {
+  color: #080808;
+  margin: 0 5px;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.top-bar .social-icons a:hover {
+  color: #f6f7f6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #90EE90;
+  border-bottom: 1px solid #c2e2f0;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #006400;  /* Dark Green */
+  font-size: 20px; 
+}
+
+
+.navbar-brand:hover {
+  color: #ffffff;
+  transform: scale(1); 
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+.nav-link:hover{
+  color: #ffffff;
+}
+.dropdown-item:active {
+  background-color: #4CAF50; /* Green color when clicked */
+}

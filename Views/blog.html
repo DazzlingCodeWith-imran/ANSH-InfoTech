@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANSH InfoTech</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap JS (includes Popper.js as dependency) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="/public/CSS/custom-style.css">
+  <link rel="stylesheet" href="/public/CSS/navbar.css">
+  <link rel="stylesheet" href="/public/CSS/footer.css">
+  <link rel="stylesheet" href="/public/CSS/blog.css">
+  <link rel="stylesheet" href="/public/CSS/client.css">
+  <link rel="stylesheet" href="/public/CSS/team.css">
+
+</head>
+<style>
+/* Blog Header */
+.blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #44e078;
+}
+
+#blog-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Meta Info */
+.blog-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Blog Content */
+.blog-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3 {
+    color: #44e078;
+}
+
+/* Blog Image */
+.blog-image {
+    width: 100%;
+   
+    height: 480px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* List Items */
+.list-group-item {
+    border: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    #blog-title {
+        font-size: 2rem;
+    }
+
+    #blog-description {
+        font-size: 1.1rem;
+    }
+
+    .blog-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    #blog-title {
+        font-size: 1.8rem;
+    }
+
+    #blog-description {
+        font-size: 1rem;
+    }
+
+    .blog-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #blog-title {
+        font-size: 1.5rem;
+    }
+
+    #blog-description {
+        font-size: 0.9rem;
+    }
+
+    .blog-content {
+        padding: 15px;
+    }
+
+    .blog-image {
+        width: 90%; /* Smaller width on smaller devices */
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #blog-title {
+        font-size: 1.3rem;
+    }
+
+    #blog-description {
+        font-size: 0.8rem;
+    }
+
+    .blog-content {
+        padding: 10px;
+    }
+
+    .blog-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+</style>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Information -->
+      <div class="address d-flex gap-3">
+        <div><i class="fas fa-map-marker-alt cursor-pointer"></i>
+          <span class="d-none d-sm-inline">SFC-4 3rd Floor , Model Town, Ludhiana</span>
+        </div>
+        <div>
+          <i class="fas fa-phone ms-3" ></i>
+          <span class="d-none d-sm-inline"> +91 7652983770</span>
+        </div> <!-- Text hidden on small screens -->
+        <div class="">
+          <i class="fas fa-envelope ms-3"></i>
+          <a href="mailto:anshinfotech1@gmail.com" class="d-none d-sm-inline text-decoration-none text-dark"
+            >anshinfotech1@gmail.com
+          </a></span>
+           
+        </div>
+       
+
+        <!-- Text hidden on small screens -->
+      </div>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <span class="social-title d-none d-sm-inline">Follow Us On : </span> <!-- Text hidden on small screens -->
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/anshinfotech" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/ansh-infotech1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">ANSH InfoTech</a>
+      <!-- Button to toggle navbar -->
+      <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="togglerIcon" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="pagesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="./index.html">Expert Team</a></li>
+              <li><a class="dropdown-item" href="./index.html">Testimonials</a></li>
+              <li>
+                <a class="dropdown-item" href="./blog.html">Blog</a>
+              </li>
+              <li><a class="dropdown-item" href="/Views/fqs.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="/Views/get guid.html">Get Guide</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <!-- Blog Header -->
+    <div class="blog-header">
+      <h1 id="blog-title">Cybersecurity 101: Essential Tips to Protect Yourself Online</h1>
+      <hr>
+      <p class="blog-description mt-5 mb-5" id="blog-description">Welcome to the digital age! Whether you're browsing social media, managing finances, or staying in touch with friends and family, protecting your personal information online is more important than ever. Cybersecurity may sound intimidating, but we’re here to break it down with simple, essential tips to help you stay safe.</p>
+    </div>
+  
+    <!-- Blog Image -->
+    <div class="text-center">
+      <img src="https://res.cloudinary.com/dohhbq1ly/image/upload/v1729510045/bseuieyjxhbgbivfr0jr.png" alt="Blog Image" class="blog-image" id="blog-image">
+    </div>
+  
+    <!-- Blog Meta Info -->
+    <p class="blog-meta text-muted text-center" id="blog-date">Published on: Thu Oct 17 2024</p>
+  
+    <!-- Blog Content -->
+    <div class="blog-content" id="blog-content">
+      <h2 class="ql-align-justify"><strong>Why Cybersecurity Matters</strong></h2>
+      <p class="ql-align-justify">Imagine waking up one morning to find your bank account drained or your personal photos shared without your consent. Scary, right? Cybersecurity is all about preventing these nightmares by safeguarding your digital life. Here’s why it’s crucial:</p>
+      <ol>
+        <li><strong>Protects Your Personal Information:</strong> From your Social Security number to your credit card details, keeping this information secure is vital.</li>
+        <li><strong>Prevents Financial Loss:</strong> Avoid unauthorized transactions and potential identity theft.</li>
+        <li><strong>Maintains Your Privacy:</strong> Ensure that your online activities and communications remain private and secure.</li>
+      </ol>
+  
+      <h2 class="ql-align-justify"><strong>1. Create Strong, Unique Passwords</strong></h2>
+      <p class="ql-align-justify">Your password is the first line of defense against cyber threats. A strong, unique password can make it significantly harder for hackers to gain access to your accounts.</p>
+      <h3 class="ql-align-justify"><strong>Tips for Strong Passwords:</strong></h3>
+      <ol>
+        <li><strong>Length Matters:</strong> Aim for at least 12 characters.</li>
+        <li><strong>Mix It Up:</strong> Use a combination of uppercase and lowercase letters, numbers, and special symbols.</li>
+        <li><strong>Avoid Common Words:</strong> Don’t use easily guessable information like your name or birthdate.</li>
+        <li><strong>Unique for Every Account:</strong> Don’t reuse passwords across different sites.</li>
+      </ol>
+      <p class="ql-align-justify"><strong>Pro Tip:</strong> Consider using a password manager to generate and store complex passwords securely.</p>
+  
+      <h2 class="ql-align-justify"><strong>2. Enable Two-Factor Authentication (2FA)</strong></h2>
+      <p class="ql-align-justify">Two-Factor Authentication adds an extra layer of security by requiring two forms of verification before you can access your accounts. Typically, this means something you know (your password) and something you have (like your phone).</p>
+      <h3 class="ql-align-justify"><strong>Benefits of 2FA:</strong></h3>
+      <ol>
+        <li><strong>Enhanced Security:</strong> Even if someone gets your password, they still need the second factor to access your account.</li>
+        <li><strong>Alerts on Suspicious Activity:</strong> Many 2FA systems notify you of login attempts, helping you spot unauthorized access quickly.</li>
+      </ol>
+  
+      <h2 class="ql-align-justify"><strong>3. Keep Your Software Updated</strong></h2>
+      <p class="ql-align-justify">Software updates often include security patches that protect against newly discovered vulnerabilities. Keeping your operating system, applications, and antivirus software up to date is crucial.</p>
+      <h3 class="ql-align-justify"><strong>Best Practices:</strong></h3>
+      <ol>
+        <li><strong>Enable Automatic Updates:</strong> This ensures you receive the latest security patches without having to think about it.</li>
+        <li><strong>Regularly Check for Updates:</strong> Sometimes, updates require manual approval, so it’s good to stay proactive.</li>
+        <li><strong>Update All Devices:</strong> Don’t forget about your smartphone, tablet, and any other connected devices.</li>
+      </ol>
+  
+      <h2 class="ql-align-justify"><strong>4. Be Wary of Phishing Attempts</strong></h2>
+      <p class="ql-align-justify">Phishing is a common tactic used by cybercriminals to trick you into revealing sensitive information. These attacks often come in the form of deceptive emails or messages that appear to be from legitimate sources.</p>
+      <h3 class="ql-align-justify"><strong>How to Spot Phishing:</strong></h3>
+      <ol>
+        <li><strong>Check the Sender’s Address:</strong> Look for slight misspellings or unusual domain names.</li>
+        <li><strong>Look for Urgent Language:</strong> Phishing attempts often create a sense of urgency to prompt quick action.</li>
+        <li><strong>Hover Over Links:</strong> Before clicking, hover your mouse over links to see the actual URL.</li>
+        <li><strong>Watch for Grammatical Errors:</strong> Many phishing emails contain noticeable mistakes.</li>
+      </ol>
+      <p class="ql-align-justify"><strong>Safety Tip:</strong> If something feels off, it’s better to verify directly with the company or person who supposedly sent the message.</p>
+  
+      <h2 class="ql-align-justify"><strong>5. Secure Your Wi-Fi Network</strong></h2>
+      <p class="ql-align-justify">An unsecured Wi-Fi network can be an open door for cybercriminals to access your personal information and devices.</p>
+      <h3 class="ql-align-justify"><strong>Steps to Secure Your Wi-Fi:</strong></h3>
+      <ol>
+        <li><strong>Change Default Credentials:</strong> Update the default username and password for your router.</li>
+        <li><strong>Use Strong Encryption:</strong> Enable WPA3 or WPA2 encryption to protect your network.</li>
+        <li><strong>Hide Your SSID:</strong> Make your network name invisible to prevent unauthorized access.</li>
+        <li><strong>Enable Firewall:</strong> Activate your router’s built-in firewall for added security.</li>
+        <li><strong>Regularly Update Firmware:</strong> Keep your router’s software up to date to protect against vulnerabilities.</li>
+      </ol>
+  
+      <h2 class="ql-align-justify"><strong>6. Use Antivirus and Anti-Malware Software</strong></h2>
+      <p class="ql-align-justify">Antivirus and anti-malware programs are essential tools for detecting and removing malicious software from your devices.</p>
+      <h3 class="ql-align-justify"><strong>Benefits:</strong></h3>
+      <ol>
+        <li><strong>Real-Time Protection:</strong> Continuously monitors and protects your device from threats.</li>
+        <li><strong>Regular Scans:</strong> Periodically scans your system for hidden malware.</li>
+        <li><strong>Automatic Updates:</strong> Keeps the software updated with the latest threat definitions.</li>
+      </ol>
+      <p class="ql-align-justify"><strong>Recommendation:</strong> Choose reputable software from trusted providers and ensure it’s always up to date.</p>
+  
+      <h2 class="ql-align-justify"><strong>7. Regularly Back Up Your Data</strong></h2>
+      <p class="ql-align-justify">Backing up your data ensures that you can recover your important files in case of a cyberattack, such as ransomware, or hardware failure.</p>
+      <h3 class="ql-align-justify"><strong>Backup Strategies:</strong></h3>
+      <ol>
+        <li><strong>Use External Drives:</strong> Store copies of your data on external hard drives or USB drives.</li>
+        <li><strong>Cloud Storage Services:</strong> Utilize reliable cloud-based services like Google Drive, Dropbox, or OneDrive for automatic backups.</li>
+        <li><strong>Set a Schedule:</strong> Regularly back up your data to ensure it’s always up to date.</li>
+        <li><strong>Test Your Backups:</strong> Occasionally verify that your backups are working correctly and that you can restore your data when needed.</li>
+      </ol>
+  
+      <h2 class="ql-align-justify"><strong>8. Educate Yourself About Common Cyber Threats</strong></h2>
+      <p class="ql-align-justify">Staying informed about the latest cyber threats and understanding how they operate can help you better protect yourself online.</p>
+      <h3 class="ql-align-justify"><strong>Common Threats to Watch Out For:</strong></h3>
+      <ol>
+        <li><strong>Phishing:</strong> Deceptive attempts to obtain sensitive information.</li>
+        <li><strong>Ransomware:</strong> Malware that locks your files and demands payment for their release.</li>
+        <li><strong>Spyware:</strong> Software designed to gather your private information without your consent.</li>
+        <li><strong>Man-in-the-Middle Attacks:</strong> Interception of communication between two parties to steal data.</li>
+      </ol>
+  
+      <p class="ql-align-justify"><strong>Tip:</strong> Stay up to date with cybersecurity news and follow trusted sources for advice and updates.</p>
+  
+      <h2 class="ql-align-justify"><strong>Conclusion</strong></h2>
+      <p class="ql-align-justify">Cybersecurity is essential for keeping your digital life safe. By following these simple tips, you can protect your personal information, financial assets, and privacy online. Stay vigilant and proactive in securing your devices, and you’ll be one step ahead of potential threats.</p>
+  
+      <p class="ql-align-justify">Thanks for reading! For more information on cybersecurity, check out our other articles and stay informed about the latest online safety tips.</p>
+  
+      <p class="ql-align-justify"><strong>Stay Safe Online!</strong></p>
+    </div>
+  </div>
+  
+
+ 
+
+  <!-- Ansh Infotech Footer Code  -->
+  <footer>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo Column -->
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a class="navbar-brand" href="#">ANSH InfoTech</a>
+            </div>
+            <div class="logo-description fs-5 text-light mt-2">
+              IT Solutions for the Digital Age. 
+            </div>
+          </div>
+  
+          <!-- Newsletter Subscription Column -->
+          <div class="col-md-6 p-4">
+            <div class="newsletter-wrap rounded-3 p-3">
+              <div class="newsletter-content">
+                <h3 class="newsletter-title text-dark mt-4 fs-3 mb-2">News Subscription</h3>
+                <p class="newsletter-text text-dark fs-6 mb-2">Get Latest Deals from Waker’s Inbox &amp; Subscribe Now</p>
+              </div>
+              <div class="container my-5">
+                <form class="newsletter-form">
+                  <div class="form-group d-flex flex-column flex-sm-row align-items-center mb-3">
+                    <!-- Input field with wrapper to hold the email icon -->
+                    <div class="input-wrapper d-flex position-relative">
+                      <input type="email" class="form-control py-2 rounded-3 border-dark pe-5" placeholder="Email Address" required>
+                      <!-- Email icon inside the input -->
+                     
+                        <i class="fa-solid fa-envelope position-absolute top-50 end-0 translate-middle-y pe-3" style="color: darkgreen;"></i>
+                     
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary ms-sm-2 mt-2 mt-sm-0 d-flex align-items-center">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Company Column -->
+          <div class="col-md-3">
+            <div class="footer-widget">
+              <h3 class="widget_title">ABOUT COMPANY</h3>
+              <div class="th-widget-about">
+                <p class="about-text">Professionally redefine transparent ROI through low-risk high-yield imperatives.
+                  Progressively create empowered, cost-effective users via team-driven approaches.</p>
+                <div class="th-social">
+                  <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                  <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Quick Links</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/about-us/">About Us</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/team/">Team</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/faq/">FAQ</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/projects/">Projects</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/contact-us/">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <!-- Useful Links Section -->
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">Useful Links</h3>
+              <ul class="webteck-menu">
+                <li><a href="https://wordpress.themeholy.com/webteck/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/terms-and-conditions/">Terms & Conditions</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/support/">Support</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/blog/">Blog</a></li>
+                <li><a href="https://wordpress.themeholy.com/webteck/careers/">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- IT Services Column -->
+          <div class="col-md-3">
+            <div class="footer-widget widget_nav_menu">
+              <h3 class="widget_title">IT SERVICES</h3>
+              <div class="menu-all-pages-container">
+                <ul class="webteck-menu">
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Web Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Business Development</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Product Management</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">UI/UX Design</a></li>
+                  <li><a href="https://wordpress.themeholy.com/webteck/service-details/">Cloud Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Posts Column -->
+
+        </div>
+
+        <!-- Footer Logo and Description -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="logo-container">
+              <a href="#">ANSH InfoTech</a>
+              <div class="logo-description">
+                IT Solutions for the Digital Age
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- Other footer content goes here -->
+    
+    <div class="copyright-wrap py-3">
+      <div class="container">
+        <div class="row">
+          <!-- Left Column with Copyright Text -->
+          <div class="col-12 text-center opacity-75">
+            <p class="copyright-text ">
+              Copyright &copy; 2024
+              <a href="#" class="copyright-link">All Rights Reserved. </a>
+              <br>Powered by <strong>Ansh InfoTech</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript File -->
+  <script src="/public/Scripts/main.js"></script>
+</body>
+
+</html>
